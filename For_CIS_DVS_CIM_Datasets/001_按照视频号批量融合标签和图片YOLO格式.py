@@ -74,16 +74,21 @@ def draw_labels(image, labels):
 
 
 # 处理单张图片
-def process_image(image_path, label_dict, merge_dir):
+def process_image(image_path, label_dict, merge_dir, label_dir):
     """
-    处理单张图片：读取、绘制标签（如果有）、保存
+    处理单张图片：读取、绘制标签（如果有）、保存，并打印标签文件信息
     参数:
         image_path (str): 图片路径
         label_dict (dict): 标签字典
         merge_dir (str): 输出目录
+        label_dir (str): Label目录路径
     """
     video_id, camera_type, frame_number = parse_path(image_path)
     key = (video_id, camera_type, frame_number)
+
+    # 构建标签文件的路径
+    label_filename = os.path.basename(image_path).replace('.png', '.txt')
+    label_path = os.path.join(label_dir, video_id, camera_type, label_filename)
 
     # 读取图片
     image = cv2.imread(image_path)
@@ -91,10 +96,13 @@ def process_image(image_path, label_dict, merge_dir):
         print(f"错误: 无法读取图片 {image_path}")
         return
 
-    # 如果有标签，则绘制
+    # 检查是否有标签
     if key in label_dict:
         labels = label_dict[key]
         image = draw_labels(image, labels)
+        print(f"已绘制标签: {label_path}")
+    else:
+        print(f"该图片没有标签文件: {image_path}")
 
     # 构造输出路径并保存
     output_dir = os.path.join(merge_dir, video_id, camera_type)
@@ -121,7 +129,8 @@ def main(data_dir, label_dir, merge_dir):
         for file in files:
             if file.endswith('.png'):
                 image_path = os.path.join(root, file)
-                process_image(image_path, label_dict, merge_dir)
+                print("处理图片:", image_path)
+                process_image(image_path, label_dict, merge_dir, label_dir)
 
 
 # 运行程序
