@@ -156,8 +156,8 @@ def main(data_dir, label_dir, merge_dir):
 if __name__ == "__main__":
     # 设置目录路径
     # 下面的这几个就是工程目录下的三个文件夹，也就是相对路径
-    data_dir = "Data"
-    label_dir = "Label"
+    data_dir = r"D:\Dataset\CIS_Network_Integration\Datas"
+    label_dir = r"D:\Dataset\CIS_Network_Integration\Labels"
     merge_dir = "Merge"
 
     # 执行主函数
