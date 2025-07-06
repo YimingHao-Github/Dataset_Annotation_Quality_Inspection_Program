@@ -145,7 +145,7 @@ def main():
     print(all_folders)
 
     # 示例：选择要检查的文件夹（你可以修改这个列表）
-    folders_to_check = ["行人", "行人识别-四人版", "行人识别-十人版", "红桥学生的行人识别"]  # 用户可以替换为其他文件夹名
+    folders_to_check = ["红桥学生的疲劳检测", "疲劳", "疲劳检测-车内", "疲劳检测-车内正对脸版"]  # 用户可以替换为其他文件夹名
 
     print(f"\n将检查以下文件夹：{folders_to_check}")
     check_folders(root_path, folders_to_check)

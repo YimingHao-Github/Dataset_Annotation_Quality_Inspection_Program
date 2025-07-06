@@ -177,7 +177,7 @@ def main():
     print(all_folders)
 
     # 指定要检查的文件夹
-    folders_to_check = ["行人"]  # 用户可以修改
+    folders_to_check =  ["红桥学生的疲劳检测", "疲劳", "疲劳检测-车内", "疲劳检测-车内正对脸版"]  # 用户可以修改
 
     print(f"\n将检查以下文件夹：{folders_to_check}")
     files_to_delete = check_folders(root_path, folders_to_check)
