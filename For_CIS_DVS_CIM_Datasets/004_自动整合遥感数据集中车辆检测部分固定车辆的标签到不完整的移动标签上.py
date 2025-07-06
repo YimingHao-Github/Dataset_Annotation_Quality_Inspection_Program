@@ -50,7 +50,7 @@ def get_bndbox_coordinates(obj):
     ]
 
 
-def add_fixed_vehicles(stationary_xml, fixed_xml, iou_threshold=0.5):
+def add_fixed_vehicles(stationary_xml, fixed_xml, iou_threshold=0.2):
     """
     将固定小车标签添加到静止小车标签中，检查IOU避免重复
     返回是否修改了文件
