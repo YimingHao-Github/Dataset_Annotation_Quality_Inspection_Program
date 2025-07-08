@@ -1,8 +1,8 @@
 import os
 
 # 定义路径
-head_label_path = r"D:\数据集转换汇总\标签专用文件夹\遥感\head"
-vehicle_label_path = r"D:\数据集转换汇总\标签专用文件夹\遥感\vehicle"
+head_label_path = r"D:\数据集转换汇总\标签专用文件夹\标签整理2\0整理\遥感\head"
+vehicle_label_path = r"D:\数据集转换汇总\标签专用文件夹\标签整理2\0整理\遥感\vehicle"
 data_path = r"E:\五大任务数据集\遥感"
 
 # 获取 head 标签（CSV 文件名，去掉 .csv 后缀）
