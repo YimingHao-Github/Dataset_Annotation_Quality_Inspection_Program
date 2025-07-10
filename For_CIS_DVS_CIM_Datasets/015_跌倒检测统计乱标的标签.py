@@ -111,7 +111,7 @@ def main():
     label_base_path = r"D:\数据集转换汇总\标签专用文件夹\标签整理2\0整理\跌倒"
 
     # 目标类别
-    target_classes = {'stand', 'sit', 'lie', 'kneel'}
+    target_classes = {'stand', 'sit', 'lie', 'kneel','crawl','other','down'}
 
     # 执行检查
     check_non_target_classes(video_base_path, label_base_path, target_classes)
