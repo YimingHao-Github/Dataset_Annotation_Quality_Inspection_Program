@@ -82,11 +82,11 @@ def main():
 
     # 指定的视频号和非目标标签
     video_ids = [
-        "20250507152207934",
-        "20250507152335423",
-        "20250523143130190"
+        "20250507152126484",
+        "20250523143432845",
+        "20250523143908627"
     ]
-    target_labels = {"a", "dwdw", "www"}
+    target_labels = {"行人"}
 
     # 执行查找
     find_error_label_files(video_ids, target_labels, base_path)
