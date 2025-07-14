@@ -110,11 +110,11 @@ def clean_dataset(input_base_path, output_base_path, valid_classes):
 
 def main():
     # 输入和输出路径
-    input_base_path = r"D:\数据集转换汇总\行人识别RGB收集与整理\行人识别RGB标签Yolov5"
-    output_base_path = r"D:\数据集转换汇总\行人识别RGB收集与整理\行人识别RGB标签Yolov5已清洗"
+    input_base_path = r"D:\数据集转换汇总\行人识别RGB收集与整理\跌倒检测RGB标签Yolov5"
+    output_base_path = r"D:\数据集转换汇总\行人识别RGB收集与整理\跌倒检测RGB标签Yolov5已清洗"
 
     # 保留的类别
-    valid_classes = {'bicycle', 'person', 'motorcycle', 'car'}
+    valid_classes = {'person'}
 
     # 处理数据集
     clean_dataset(input_base_path, output_base_path, valid_classes)

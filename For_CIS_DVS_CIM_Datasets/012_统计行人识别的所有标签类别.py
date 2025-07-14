@@ -35,7 +35,7 @@ def get_all_classes(base_path):
 
 def main():
     # 指定基础路径
-    base_path = r"D:\数据集转换汇总\行人识别RGB收集与整理\行人识别RGB标签Yolov5"
+    base_path = r"D:\数据集转换汇总\行人识别RGB收集与整理\行人识别RGB标签Yolov5已清洗"
 
     # 获取所有类别
     all_classes = get_all_classes(base_path)
