@@ -2,7 +2,7 @@ import os
 
 # 定义路径
 label_path = r"D:\数据集转换汇总\标签专用文件夹\标签整理2\0整理\行人识别"
-data_path = r"E:\五大任务数据集\行人识别"
+data_path = r"E:\DatasetFor5Task\PedestrianDetection"
 
 # 获取文件夹列表
 label_folders = set(os.listdir(label_path))
