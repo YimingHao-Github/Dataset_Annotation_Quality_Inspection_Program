@@ -28,7 +28,7 @@ def check_video_labels(video_base_path, label_base_path):
     检查所有视频的标签情况，统计类别，并报告异常
 
     Args:
-        video_base_path: 视频数据根路径 (E:\五大任务数据集\FallDetection\)
+        video_base_path: 视频数据根路径 (E:\DatasetFor5Task\FallDetection\)
         label_base_path: 标签数据根路径 (D:\数据集转换汇总\标签专用文件夹\标签整理2\0整理\跌倒\)
     """
     video_base_path = Path(video_base_path)
@@ -133,8 +133,8 @@ def check_video_labels(video_base_path, label_base_path):
 
 def main():
     # 输入路径
-    video_base_path = r"E:\五大任务数据集\FallDetection"
-    label_base_path = r"D:\数据集转换汇总\标签专用文件夹\标签整理2\0整理\跌倒"
+    video_base_path = r"E:\DatasetFor5Task\FallDetection"
+    label_base_path = r"D:\数据集转换汇总\原始任务标签整理\跌倒"
 
     # 执行检查
     check_video_labels(video_base_path, label_base_path)
